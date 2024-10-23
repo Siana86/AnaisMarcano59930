@@ -33,6 +33,7 @@ li {
         
 }
 
+
 p {
     font-family: "IBM Plex Sans", sans-serif;
     color: black;
@@ -339,6 +340,379 @@ ESTILOS DEL FOOTER
     }
 }
 
+/* 
+ESTILOS INDEX
+*/
+/* Sección del banner principal */
+
+.bannerPrincipalIndex {
+    width: 100%;
+    height: auto;   
+    margin: 2.5rem 5px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, auto);
+    background-image: url("../images/bannerPrincipalHome.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;  
+    grid-template-areas: 
+    ".  .   .   .   .   .   .   .  . "
+    ".  .   .   .   .   imgPrincipalIndex1 .   .   . "
+    ".  .   .   .   .   .   imgPrincipalIndex2  .   ."
+    ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex  imgPrincipalIndex3   ."
+    ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex   .  . "
+    ".  .   .   .   .   .   .   btnMasInfoBlanco  btnMasInfoBlanco "
+    ;
+}
+
+.imgPrincipalIndex1{
+    grid-area: imgPrincipalIndex1;
+    border-radius: 1.25rem;
+    width: 8.125rem;
+    height: 8.125rem;
+    margin-top: 30%;
+}
+
+.imgPrincipalIndex2{
+    grid-area: imgPrincipalIndex2;
+    border-radius: 1.25rem;
+    width: 8.125rem;
+    height: 8.125rem;
+}
+
+.imgPrincipalIndex3{
+    grid-area: imgPrincipalIndex3;
+    border-radius: 1.25rem;
+    width: 8.125rem;
+    height: 8.125rem;
+}
+
+.bannerPrincipalIndex p {
+    font-size: x-large;
+    color: #f7f7f7;
+    font-weight: bold;
+    grid-area: textoPrincipalIndex;
+    width: 100%;
+}
+
+.bannerPrincipalIndex .btnMasInfoBlanco {
+    grid-area: btnMasInfoBlanco;
+    /* margin-left: 40%;     */
+    }
+
+@media screen and (max-width: 46.8125rem) {
+    .bannerPrincipalIndex {
+        /* margin: 2.5rem 5px;
+        display: grid; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 5.3125rem);
+        background-image: url("../images/bannerPrincipalHomeMob.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-areas:
+            " .   "
+            " .   "
+            " .   "
+            " .   "             
+            " .   "
+            "textoPrincipalIndex"
+            "btnMasInfoBlanco    "
+            "btnMasInfoBlanco    ";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .textoPrincipalIndex {
+        grid-area: textoPrincipalIndex;
+        text-align: center;        
+    }
+
+    .bannerPrincipalIndex img {
+        display: none;
+    }
+
+    .bannerPrincipalIndex p {
+        font-size: large;
+        text-align: center; 
+    }
+
+
+    .btnMasInfoBlanco {
+        grid-area: btnMasInfoBlanco;
+        margin:0rem;       
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 46.875rem) and (max-width: 61.875rem) {
+    .bannerPrincipalIndex {        
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(6, auto);
+        background-image: url("../images/bannerPrincipalHome.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;  
+        grid-template-areas: 
+        ".  .   .   .   .   .   .   .  . "
+        ".  .   .   .   .    . imgPrincipalIndex1   .   . "
+        ".  .   .   .   .   .   .   imgPrincipalIndex2   ."
+        ".  .   .   .   .    .  textoPrincipalIndex   textoPrincipalIndex  imgPrincipalIndex3"
+        ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex   .  . "
+        ".  .   .   .   .   .   .   btnMasInfoBlanco  btnMasInfoBlanco "
+        ;
+    }
+
+    .bannerPrincipalIndex p {
+        font-size: medium;        
+    }
+
+    .imgPrincipalIndex1, .imgPrincipalIndex2, .imgPrincipalIndex3  {
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Seccion galeria index */
+
+
+.galeriaIndex {
+    display: grid;
+    margin: 0rem;
+    align-items: stretch;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 6.25rem);
+    grid-template-areas: 
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex . . . . . .";
+}
+
+.galeriaIndex div {
+    grid-area: galeriaIndex;
+    align-content: center;
+}
+
+.imgGale1Index {
+    grid-area: imgGale1Index;
+    width: 15.375rem;
+    height: 34.6875rem;     
+}
+
+.imgGale2Index {
+    grid-area: imgGale2Index;
+    width: 15.375rem;
+    height: 34.6875rem; 
+}
+
+.imgGale3Index {
+    grid-area: imgGale3Index;
+    width: 15.375rem;
+    height: 34.6875rem;    
+}
+
+
+@media screen and (max-width: 46.874rem) {
+    .galeriaIndex {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-areas: 
+            "galeriaIndex galeriaIndex  "
+            "galeriaIndex galeriaIndex  "
+            "galeriaIndex galeriaIndex  "
+            "imgGale1Index imgGale1Index"
+            "imgGale1Index imgGale1Index"
+            "imgGale1Index imgGale1Index"
+            "imgGale1Index imgGale1Index"
+            "imgGale1Index imgGale1Index"            
+            "imgGale2Index imgGale2Index"
+            "imgGale2Index imgGale2Index"
+            "imgGale2Index imgGale2Index"
+            "imgGale2Index imgGale2Index"
+            "imgGale2Index imgGale2Index"
+            "imgGale3Index imgGale3Index"
+            "imgGale3Index imgGale3Index"
+            "imgGale3Index imgGale3Index"
+            "imgGale3Index imgGale3Index"
+            "imgGale3Index imgGale3Index"
+            ;
+            justify-items: center;
+            align-items: center;
+    }
+    
+    .galeriaIndex {
+        width: 100%;
+    }
+    
+    .btnMasInfoNegro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .galeriaIndex .btnMasInfoNegro p {
+        max-width: 31.25rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 46.875rem) and (max-width: 61.875rem) {
+    .galeriaIndex {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        ".              .           .               .           .           .          imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        ;
+    }
+
+    .imgGale1Index, .imgGale2Index, .imgGale3Index {
+        width: 11.4375rem;
+        height: 26rem;
+        margin: 0%; 
+    }
+
+    .galeriaIndex p {
+        font-size: medium;    
+    }
+
+    .galeriaIndex h3 {
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .galeriaIndex .btnMasInfoNegro {
+        padding: auto;
+        font-size: small;
+        
+    }
+}
+
+
+/* Seccion mas info Index */
+
+.masInfoIndex {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);    
+    column-gap: 1.5625rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+    ;           
+}
+
+.infoClaroIndex1 {
+    grid-area: infoClaroIndex1;
+}
+
+.infoClaroIndex2 {
+    grid-area: infoClaroIndex2;
+}
+
+.infoOscuroIndex1 {
+    grid-area: infoOscuroIndex1;
+}
+
+.infoOscuroIndex2 {
+    grid-area: infoOscuroIndex2;
+}
+
+.infoClaroIndex1 a, .infoClaroIndex2 a, .infoOscuroIndex1 a, .infoOscuroIndex2 a {
+    padding: auto;
+    font-size: .8125rem;
+}
+
+.infoClaroIndex1, .infoClaroIndex2  {
+    background-color: #deeaef;
+    border-radius: 1.25rem;
+    padding: 20px 10px;
+    margin: 5px 5px;
+    width: 90%;
+    min-height: 22rem;
+    display: flex; 
+    align-items: center;    
+    text-align: center;
+}
+
+.infoOscuroIndex1, .infoOscuroIndex2 {
+    background-color: #c0d7e1;
+    border-radius: 1.25rem;
+    padding: 20px 10px;
+    margin: 5px 5px;
+    width: 90%;
+    min-height: 22rem;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 46.874rem) {
+    .masInfoIndex {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(16,1fr);    
+        /* column-gap: 1.5625rem; */
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "infoClaroIndex1   infoClaroIndex1"
+        "infoClaroIndex1   infoClaroIndex1"
+        "infoClaroIndex1   infoClaroIndex1"
+        "infoClaroIndex1   infoClaroIndex1"
+        "infoOscuroIndex1  infoOscuroIndex1"
+        "infoOscuroIndex1  infoOscuroIndex1"
+        "infoOscuroIndex1  infoOscuroIndex1"
+        "infoOscuroIndex1  infoOscuroIndex1"
+        "infoClaroIndex2   infoClaroIndex2"
+        "infoClaroIndex2   infoClaroIndex2 "
+        "infoClaroIndex2   infoClaroIndex2 "
+        "infoClaroIndex2   infoClaroIndex2 "
+        "infoOscuroIndex2   infoOscuroIndex2"
+        "infoOscuroIndex2   infoOscuroIndex2"
+        "infoOscuroIndex2   infoOscuroIndex2"
+        "infoOscuroIndex2   infoOscuroIndex2"
+        ;           
+    }
+}
+
+
+
+@media screen and (min-width: 46.875rem) and (max-width: 61.875rem) {
+    .masInfoIndex {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(8,1fr); 
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1"
+        "infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        ;           
+    }
+    
+} 
 
 
 
@@ -627,169 +1001,6 @@ ESTILOS SOPORTE
 
 
 
-/* 
-ESTILOS INDEX
-*/
-/* Sección del banner principal */
-
-.bannerPrincipalIndex {
-    width: 100%;
-    height: auto;   
-    margin: 2.5rem 5px;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(6, auto);
-    background-image: url("../images/bannerPrincipalHome.jpg");
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;  
-    grid-template-areas: 
-    ".  .   .   .   .   .   .   .  . "
-    ".  .   .   .   .   imgPrincipalIndex1 .   .   . "
-    ".  .   .   .   .   .   imgPrincipalIndex2  .   ."
-    ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex  imgPrincipalIndex3   ."
-    ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex   .  . "
-    ".  .   .   .   .   .   .   btnMasInfoBlanco  btnMasInfoBlanco "
-    ;
-}
-
-.imgPrincipalIndex1{
-    grid-area: imgPrincipalIndex1;
-    border-radius: 1.25rem;
-    width: 8.125rem;
-    height: 8.125rem;
-    margin-top: 30%;
-}
-
-.imgPrincipalIndex2{
-    grid-area: imgPrincipalIndex2;
-    border-radius: 1.25rem;
-    width: 8.125rem;
-    height: 8.125rem;
-}
-
-.imgPrincipalIndex3{
-    grid-area: imgPrincipalIndex3;
-    border-radius: 1.25rem;
-    width: 8.125rem;
-    height: 8.125rem;
-}
-
-.bannerPrincipalIndex p {
-    font-size: x-large;
-    color: #f7f7f7;
-    font-weight: bold;
-    grid-area: textoPrincipalIndex;
-    width: 100%;
-}
-
-.bannerPrincipalIndex .btnMasInfoBlanco {
-    grid-area: btnMasInfoBlanco;
-    margin-left: 40%;    
-    }
-
-
-/* Seccion galeria index */
-
-
-.galeriaIndex {
-    display: grid;
-    margin: 0rem;
-    align-items: stretch;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 6.25rem);
-    grid-template-areas: 
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
-        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex . . . . . .";
-}
-
-.galeriaIndex div {
-    grid-area: galeriaIndex;
-    align-content: center;
-}
-
-.imgGale1Index {
-    grid-area: imgGale1Index;
-    width: 15.375rem;
-    height: 34.6875rem;     
-}
-
-.imgGale2Index {
-    grid-area: imgGale2Index;
-    width: 15.375rem;
-    height: 34.6875rem; 
-}
-
-.imgGale3Index {
-    grid-area: imgGale3Index;
-    width: 15.375rem;
-    height: 34.6875rem;    
-}
-
-
-
-
-/* Seccion mas info Index */
-
-.masInfoIndex {
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(4,6.25rem);    
-    column-gap: 1.5625rem;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas:
-    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
-    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
-    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
-    "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
-    ;           
-}
-
-.infoClaroIndex1 {
-    grid-area: infoClaroIndex1;
-}
-
-.infoClaroIndex2 {
-    grid-area: infoClaroIndex2;
-}
-
-.infoOscuroIndex1 {
-    grid-area: infoOscuroIndex1;
-}
-
-.infoOscuroIndex2 {
-    grid-area: infoOscuroIndex2;
-}
-
-
-.infoClaroIndex1, .infoClaroIndex2  {
-    background-color: #deeaef;
-    border-radius: 1.25rem;
-    padding: 20px 10px;
-    margin: 5px 5px;
-    width: 19.5rem;
-    height: 20rem;
-    display: flex; 
-    align-items: center;    
-    text-align: center;
-}
-
-.infoOscuroIndex1, .infoOscuroIndex2 {
-    background-color: #c0d7e1;
-    border-radius: 1.25rem;
-    padding: 20px 10px;
-    margin: 5px 5px;
-    width: 19.5rem;
-    height: 20rem;
-    display: flex; 
-    align-items: center;
-    text-align: center;
-}
 
 
 /* 
