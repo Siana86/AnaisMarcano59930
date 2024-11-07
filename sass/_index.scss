@@ -1,0 +1,164 @@
+// ESTILOS INDEX
+
+
+// Seccion mas info Index
+.bannerPrincipalIndex {
+    width: 100%;
+    height: 90%; 
+    margin-bottom: .625rem;   
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, auto);
+    background-image: url("../images/bannerPrincipalHome.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-areas:
+        ".  .   .   .   .   .   .   .  . "
+        ".  .   .   .   .   imgPrincipalIndex1 .   .   . "
+        ".  .   .   .   .   .   imgPrincipalIndex2  .   ."
+        ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex  imgPrincipalIndex3   ."
+        ".  .   .   .   .   textoPrincipalIndex   textoPrincipalIndex   .  . "
+        ".  .   .   .   .   .   .   btnMasInfoBlanco  btnMasInfoBlanco ";
+}
+
+.imgPrincipalIndex1,
+.imgPrincipalIndex2,
+.imgPrincipalIndex3 {
+    border-radius: $borderRadius20;
+    width: 8.125rem;
+    height: 8.125rem;
+
+    &.imgPrincipalIndex1 {
+        grid-area: imgPrincipalIndex1;
+        margin-top: 30%;
+    }
+
+    &.imgPrincipalIndex2 {
+        grid-area: imgPrincipalIndex2;
+    }
+
+    &.imgPrincipalIndex3 {
+        grid-area: imgPrincipalIndex3;
+    }
+}
+
+.bannerPrincipalIndex p {
+    font-size: x-large;
+    color: $colorSecundario;
+    font-weight: bold;
+    grid-area: textoPrincipalIndex;
+    width: 100%;
+}
+
+.bannerPrincipalIndex .btnMasInfoBlanco {
+    grid-area: btnMasInfoBlanco;
+}
+
+// Seccion galeria index 
+.galeriaIndex {
+    display: grid;
+    margin: 0;
+    align-items: stretch;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 6.25rem);
+    grid-template-areas:
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex imgGale1Index imgGale1Index imgGale2Index imgGale2Index imgGale3Index imgGale3Index"
+        "galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex galeriaIndex . . . . . .";
+
+    div {
+        grid-area: galeriaIndex;
+        align-content: center;
+    }
+}
+
+.imgGale1Index,
+.imgGale2Index,
+.imgGale3Index {
+    width: 15.375rem;
+    height: 34.6875rem;
+
+    &.imgGale1Index {
+        grid-area: imgGale1Index;
+    }
+
+    &.imgGale2Index {
+        grid-area: imgGale2Index;
+    }
+
+    &.imgGale3Index {
+        grid-area: imgGale3Index;
+    }
+}
+
+//Seccion mas info Index
+.masInfoIndex {
+    display: grid;
+    margin-bottom: .625rem; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.5625rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2"
+        "infoClaroIndex1  infoClaroIndex1   infoOscuroIndex1   infoOscuroIndex1   infoClaroIndex2   infoClaroIndex2  infoOscuroIndex2   infoOscuroIndex2";
+
+    .infoClaroIndex1 {
+        grid-area: infoClaroIndex1;
+    }
+
+    .infoClaroIndex2 {
+        grid-area: infoClaroIndex2;
+    }
+
+    .infoOscuroIndex1 {
+        grid-area: infoOscuroIndex1;
+    }
+
+    .infoOscuroIndex2 {
+        grid-area: infoOscuroIndex2;
+    }
+
+    .infoClaroIndex1,
+    .infoClaroIndex2 {
+        background-color: $backgroundClaro;
+        border-radius: $borderRadius20;
+        padding: 20px 10px;
+        margin: 5px 5px;
+        width: 90%;
+        min-height: 22rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        a {
+            padding: auto;
+            font-size: 0.8125rem;
+        }
+    }
+
+    .infoOscuroIndex1,
+    .infoOscuroIndex2 {
+        background-color: $backgroundOscuro;
+        border-radius: $borderRadius20;
+        padding: 20px 10px;
+        margin: 5px 5px;
+        width: 90%;
+        min-height: 22rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        a {
+            padding: auto;
+            font-size: 0.8125rem;
+        }
+    }
+}

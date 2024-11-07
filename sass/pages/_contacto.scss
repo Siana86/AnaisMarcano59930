@@ -1,0 +1,19 @@
+.formulario {
+    label {
+        display: block;
+        margin-bottom: $labelMarginBottom;
+        color: $colorPrimario;
+        font-family: $font-family;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100vw;
+        padding: $inputPadding;
+        margin-bottom: $inputMarginBottom;
+        border: $borderInput;
+        border-radius: 4px;
+        font-size: $inputFontSize;
+    }
+}

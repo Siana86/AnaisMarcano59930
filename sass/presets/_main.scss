@@ -1,0 +1,78 @@
+// ESTILOS BODY Y MAIN
+
+#body {
+    max-width: $max-width;
+}
+
+#main {
+    width: 95vw;
+    margin-top: 0.625rem;
+    min-height: 100vh;
+}
+
+// Estilos de tipografia 
+p,h1,h2,h3,h4 {
+    font-family: $font-family;
+    color: black;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+// Estilos de botones
+.btnMasInfo {
+    font-family: $font-family;
+    font-size: medium;
+
+    &Blanco a {
+        text-decoration: none;
+        background-color: $colorSecundario;
+        padding: 0.3125rem 1.875rem;
+        border-radius: $borderRadius20;
+    }
+
+    &Negro a {
+        background-color: $colorPrimario;
+        color: $colorSecundario;
+        padding: 0.3125rem 1.875rem;
+        border-radius: $borderRadius20;
+    }
+
+    &Azul a {
+        text-decoration: none;
+        background-color: $colorDestacado;
+        color: $colorSecundario;
+        padding: 0.3125rem 1.875rem;
+        border-radius: $borderRadius20;
+    }
+}
+
+.btnNegro button, input[type="submit"] {
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    padding: 0.3125rem 1.875rem;
+    margin: 0.375rem 0.25rem;
+    border-radius: $borderRadius20;
+}
+
+
+.border20 img {
+    border-radius: $borderRadius20;
+}

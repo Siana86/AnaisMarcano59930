@@ -1,0 +1,149 @@
+// Estilos banner principal soporte
+.bannerPrincipalSoporte {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-bottom: .625rem; 
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    img {
+        width: 100vw;
+        height: auto;
+    }
+
+    p {
+        position: absolute;
+        top: 25%;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 6.25rem;
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        width: auto;
+    }
+}
+
+//Estilos card soporte
+.cardPricipalSoporte {
+    display: grid;
+    margin-bottom: .9375rem; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.5625rem;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    grid-template-areas:
+        "cardSmartphonesSoporte cardSmartphonesSoporte cardTabletsSoporte cardTabletsSoporte cardManualesSoporte cardManualesSoporte cardGarantiaSoporte cardGarantiaSoporte"
+        "cardSmartphonesSoporte cardSmartphonesSoporte cardTabletsSoporte cardTabletsSoporte cardManualesSoporte cardManualesSoporte cardGarantiaSoporte cardGarantiaSoporte"
+        "cardSmartphonesSoporte cardSmartphonesSoporte cardTabletsSoporte cardTabletsSoporte cardManualesSoporte cardManualesSoporte cardGarantiaSoporte cardGarantiaSoporte"
+        "cardSmartphonesSoporte cardSmartphonesSoporte cardTabletsSoporte cardTabletsSoporte cardManualesSoporte cardManualesSoporte cardGarantiaSoporte cardGarantiaSoporte";
+
+    .cardSmartphonesSoporte {
+        grid-area: cardSmartphonesSoporte;        
+    }
+
+    .cardTabletsSoporte {
+        grid-area: cardTabletsSoporte;
+    }
+
+    .cardManualesSoporte {
+        grid-area: cardManualesSoporte;
+    }
+
+    .cardGarantiaSoporte {
+        grid-area: cardGarantiaSoporte;
+    }
+
+    p {
+        font-size: xx-large;
+        color: #94b6cc;
+        font-weight: bold;
+    }
+
+    .cardSoporte {
+        div {
+            background-color: $backgroundClaro;
+            border-radius: $borderRadius20;
+            max-width: 100vw;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        a {
+            font-family: $font-family;
+            font-size: large;
+            font-weight: bold;
+            color: $colorPrimario;
+            text-align: center;
+        }
+
+        img {
+            max-width: 80%;
+            border-radius: 1.875rem;
+            padding: 0.3125rem 0.3125rem;
+            margin: 0.3125rem 0.3125rem;
+        }
+    }
+}
+
+// Estilos section soporte secundario 
+.contactoSecundarioSoporte {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-areas:
+        "cardSoporteAzul1 cardSoporteAzul1 cardSoporteBlanco1 cardSoporteBlanco1 cardSoporteAzul2 cardSoporteAzul2"
+        "cardSoporteAzul1 cardSoporteAzul1 cardSoporteBlanco1 cardSoporteBlanco1 cardSoporteAzul2 cardSoporteAzul2"
+        "cardSoporteAzul1 cardSoporteAzul1 cardSoporteBlanco1 cardSoporteBlanco1 cardSoporteAzul2 cardSoporteAzul2"
+        "cardSoporteAzul1 cardSoporteAzul1 cardSoporteBlanco1 cardSoporteBlanco1 cardSoporteAzul2 cardSoporteAzul2";
+
+    .cardSoporteAzul1 {
+        grid-area: cardSoporteAzul1;
+        background-color: #94b9cc;
+        border-radius: $borderRadius20;
+        max-width: 24.6875rem;
+        min-height: 24.5625rem;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardSoporteBlanco1 {
+        grid-area: cardSoporteBlanco1;
+        background-color: $colorSecundario;
+        border-radius: $borderRadius20;
+        max-width: 24.6875rem;
+        min-height: 24.5625rem;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardSoporteAzul2 {
+        grid-area: cardSoporteAzul2;
+        background-color: #94b9cc;
+        border-radius: $borderRadius20;
+        max-width: 24.6875rem;
+        min-height: 24.5625rem;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
