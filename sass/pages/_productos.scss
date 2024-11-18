@@ -3,10 +3,53 @@
     height: 6.25rem;
     padding: 20px 10px;
     margin: 5px 5px;
+    display: flex;
+    background-image: url("../images/bannerPrincipalProducts.png");
 
     p {
         font-size: xx-large;
         color: $colorSecundario;
         font-weight: bold;
     }
+}
+
+.custom-card {
+    min-height: 12.5rem; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+.custom-card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;   
+}
+
+.cart-icon {
+    max-width: 2.5rem;
+    float: right;    
+}
+
+.price {
+    font-weight: bold;   
 }
