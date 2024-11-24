@@ -1,71 +1,90 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="soporte técnico, atención al cliente, smartphones, tablets, reparaciones, facturación, servicios online">
+    <meta name="description"
+        content="Descubre nuestros servicios de atención al cliente, soporte técnico, facturación, y más. Encuentra soluciones rápidas y eficientes para tus dispositivos.">
+    <meta property="og:title" content="Atención al Cliente y Soporte Técnico">
+    <meta property="og:description"
+        content="Explora nuestra plataforma de soporte técnico, reparaciones autorizadas y guías de usuario. Nuestro equipo está aquí para ayudarte.">
+    <meta property="og:image" content="../images/bannerPrincipalSoporte.jpg">
     <link rel="shortcut icon" href="../icons/iconoPrincipal.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Atención al Cliente y Soporte Técnico</title>
+
+    <!-- Link de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Link de BTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body id="body">
-    <header id="header">     
-        <nav class="navbar px-1 py-1 navbar-expand-lg bg-body-secondary";>            
-            <div class="container-fluid">                
-                    <a class="navbar-brand " href="../index.html"><img src="../icons/iconoPrincipal.png" alt=""></a>                             
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header id="header">
+        <nav class="navbar px-1 py-1 navbar-expand-lg bg-body-secondary" ;>
+            <div class="container-fluid">
+                <a class="navbar-brand " href="../index.html"><img src="../icons/iconoPrincipal.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                    </li>                  
-                    <li class="nav-item dropdown bg-body-secondary">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Atención al cliente
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
-                        <li><a class="dropdown-item" href="#">Soporte técnico</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Nuestra empresa</a></li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown bg-body-secondary">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Atención al cliente
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="#">Soporte técnico</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Nuestra empresa</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    </li>                  
-                </ul>
-                <form class="d-flex "   role="search"  >
-                    <div class="buscador d-flex justify-content-between align-items-center">
-                        <input class="form-control me-1" type="search" placeholder="Buscar..." aria-label="Search">                  
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </form>
-                <ul>
-                    <li> <a href="#"><img src="../icons/carrito.png" alt="carrito"></a></li>
-                </ul>
-    
+                    <form class="d-flex " role="search">
+                        <div class="buscador d-flex justify-content-between align-items-center">
+                            <input class="form-control me-1" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                    </form>
+                    <ul>
+                        <li> <a href="#"><img src="../icons/carrito.png" alt="carrito"></a></li>
+                    </ul>
+
                 </div>
             </div>
-        </nav>        
+        </nav>
     </header>
 
 
     <main id="main">
-        <section class="bannerPrincipalSoporte">
+        <section data-aos="fade-down" class="bannerPrincipalSoporte">
             <div>
                 <img src="../images/bannerPrincipalSoporte.jpg" alt="Banner soporte y atención al cliente">
                 <p>Nuestro objetivo es ayudarte</p>
-            </div>           
+            </div>
         </section>
 
-        <section class="cardSoporte">
+        <section data-aos="fade-left" class="cardSoporte">
             <article class="cardPricipalSoporte">
                 <div class="cardSmartphonesSoporte">
                     <img src="../images/bannerSecundario1.jpg" alt="Celulares">
@@ -82,16 +101,18 @@
                 <div class="cardGarantiaSoporte">
                     <img src="../images/bannerSecundario4.png" alt="Garantía">
                     <a href="#">Garantia</a>
-                </div>                
+                </div>
             </article>
         </section>
 
-        <section>
+        <section data-aos="fade-right">
             <article class="contactoSecundarioSoporte">
                 <div class="cardSoporteAzul1">
                     <div>
                         <h3>Servicio en línea</h3>
-                        <p>Accede a nuestro servicio en línea para resolver tus dudas y gestionar tus solicitudes de manera rápida y eficiente. Nuestro equipo está disponible para ayudarte con cualquier consulta relacionada con nuestros productos y servicios.</p>
+                        <p>Accede a nuestro servicio en línea para resolver tus dudas y gestionar tus solicitudes de
+                            manera rápida y eficiente. Nuestro equipo está disponible para ayudarte con cualquier
+                            consulta relacionada con nuestros productos y servicios.</p>
                         <img src="../icons/iconAtencionOnLine.png" alt="Atención on line">
                         <a href="">Más información</a>
                     </div>
@@ -99,7 +120,9 @@
                 <div class="cardSoporteBlanco1">
                     <div>
                         <h3>Facturación y suscripciones</h3>
-                        <p>Consulta todo lo relacionado con tus facturas y planes de suscripción. Accede a tus detalles de pago, revisa tus historiales de transacciones y gestiona tus renovaciones automáticas de manera segura y sencilla.</p>
+                        <p>Consulta todo lo relacionado con tus facturas y planes de suscripción. Accede a tus detalles
+                            de pago, revisa tus historiales de transacciones y gestiona tus renovaciones automáticas de
+                            manera segura y sencilla.</p>
                         <img src="../icons/iconFactura.png" alt="Facturación">
                         <a href="">Más información</a>
                     </div>
@@ -107,37 +130,41 @@
                 <div class="cardSoporteAzul2">
                     <div>
                         <h3>Identifica el número serial de tu equipo</h3>
-                        <p>Aprende cómo encontrar el número de serie de tu dispositivo para poder recibir asistencia técnica personalizada y soporte especializado. Sigue nuestras guías paso a paso para localizar esta información de forma rápida.</p>
+                        <p>Aprende cómo encontrar el número de serie de tu dispositivo para poder recibir asistencia
+                            técnica personalizada y soporte especializado. Sigue nuestras guías paso a paso para
+                            localizar esta información de forma rápida.</p>
                         <img src="../icons/iconBuscarSerial.png" alt="Buscador de serial del dispositivo">
                         <a href="">Más información</a>
                     </div>
                 </div>
             </article>
         </section>
-        
-        <section class="bannerSecundarioSoporte">
+
+        <section data-aos="fade-left" class="bannerSecundarioSoporte">
             <div>
                 <h3>Reparaciones</h3>
-                <p>Utiliza nuestra red de proveedores de servicios autorizados, nuestros puntos de servicios te ofrece una amplia red para realizar reparaciones y revisiones en todo el territorio nacional, recuerda no acudir a técnicos no autorizados.</p>
+                <p>Utiliza nuestra red de proveedores de servicios autorizados, nuestros puntos de servicios te ofrece
+                    una amplia red para realizar reparaciones y revisiones en todo el territorio nacional, recuerda no
+                    acudir a técnicos no autorizados.</p>
                 <a href="">Mas información</a>
             </div>
         </section>
     </main>
 
     <footer id="footer">
-        <section>            
+        <section>
             <ul>
                 <h4>Productos y servicios</h4>
-                <li> <a href="#">Smartphones</a></li> 
-                <li> <a href="#">Tablets</a></li> 
-                <li> <a href="#">Accesorios</a></li> 
-                <li> <a href="#">Otros</a></li> 
+                <li> <a href="#">Smartphones</a></li>
+                <li> <a href="#">Tablets</a></li>
+                <li> <a href="#">Accesorios</a></li>
+                <li> <a href="#">Otros</a></li>
             </ul>
             <ul>
                 <h4>Shop</h4>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Nuestros locales</a></li>
-                    <li><a href="#">Arrepentimiento</a></li>
+                <li><a href="#">Arrepentimiento</a></li>
                 <li><a href="#">Preguntas frecuentes</a></li>
             </ul>
             <ul>
@@ -152,27 +179,37 @@
                 <h4>Acerca de nosotros</h4>
                 <li><a href="#">Quienes somos</a></li>
                 <li><a href="#">Trabaja con nosotros</a></li>
-            </ul>            
+            </ul>
         </section>
         <section>
             <ul class="redesFooter">
                 <p>Mantente informado. ¡Síguenos!</p>
-                <li> <a href="https://www.facebook.com" target="_blank"><img src="../icons/iconFaceBook.png" alt="FaceBook"></a></li>
-                <li> <a href="https://www.instagram.com" target="_blank"><img src="../icons/iconInstagram.png" alt="Instagram"></a></li>
-                <li> <a href="https://twitter.com" target="_blank"><img src="../icons/iconTwitterX.png" alt="TwitterX"></a></li>
-                <li> <a href="https://www.youtube.com" target="_blank"><img src="../icons/iconYouTube.png" alt="YouTube"></a></li>
+                <li> <a href="https://www.facebook.com" target="_blank"><img src="../icons/iconFaceBook.png"
+                            alt="FaceBook"></a></li>
+                <li> <a href="https://www.instagram.com" target="_blank"><img src="../icons/iconInstagram.png"
+                            alt="Instagram"></a></li>
+                <li> <a href="https://twitter.com" target="_blank"><img src="../icons/iconTwitterX.png"
+                            alt="TwitterX"></a></li>
+                <li> <a href="https://www.youtube.com" target="_blank"><img src="../icons/iconYouTube.png"
+                            alt="YouTube"></a></li>
             </ul>
-        </section>        
+        </section>
     </footer>
 
- <!-- Link de js BTS -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
- integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
- crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
- integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
- crossorigin="anonymous"></script>
+    <!-- Link de js BTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 
+    <!-- Link de AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
+
 </html>

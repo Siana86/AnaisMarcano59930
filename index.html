@@ -1,10 +1,18 @@
 <html lang="en">
 
-<head>
+<head lang="es">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="smartphones, tablets, accesorios, dispositivos móviles, covers, atención al cliente">
+    <meta name="description" content="Descubre nuestra variedad de dispositivos móviles y accesorios. Calidad, diseño y funcionalidad al alcance de tus manos.">
+    <meta property="og:title" content="Tu estilo, tu celular | Construye lo que necesitas">
+    <meta property="og:description" content="Explora nuestra tienda de dispositivos móviles y accesorios. Garantizamos calidad y diseño innovador.">
+    <meta property="og:image" content="./images/banner1Principal.jpg">
     <link rel="shortcut icon" href="./icons/iconoPrincipal.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Tu estilo, tu celular | Tienda de tecnología</title>
+    <!-- Link de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Link de BTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,113 +22,115 @@
 
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg bg-body-secondary";>            
-            <div class="container-fluid">                
-                    <a class="navbar-brand" href="#"><img src="./icons/iconoPrincipal.png" alt=""></a>                             
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg bg-body-secondary" ;>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./icons/iconoPrincipal.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                    </li>                  
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Atención al cliente
-                        </a>
-                    <ul class="dropdown-menu ">
-                        <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
-                        <li><a class="dropdown-item" href="./pages/soporte.html">Soporte técnico</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Nuestra empresa</a></li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Atención al cliente
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="./pages/soporte.html">Soporte técnico</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Nuestra empresa</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    </li>                  
-                </ul>
-                <form class="d-flex "   role="search"  >
-                    <div class="buscador d-flex justify-content-between align-items-center">
-                        <input class="form-control me-1" type="search" placeholder="Buscar..." aria-label="Search">                  
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </form>
-                <ul>
-                    <li> <a href="#"><img src="./icons/carrito.png" alt="carrito"></a></li>
-                </ul>
-    
+                    <form class="d-flex " role="search">
+                        <div class="buscador d-flex justify-content-between align-items-center">
+                            <input class="form-control me-1" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                    </form>
+                    <ul>
+                        <li> <a href="#"><img src="./icons/carrito.png" alt="carrito"></a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
+    </header>
 
-        
     <main id="main">
-        <section >
-            <div class="bannerPrincipalIndex" >
-                <img class="imgPrincipalIndex1"  src="./images/banner1Principal.jpg" alt="Banner de ranura sim card de celulares">
+        <section>
+            <h1>Home</h1>
+            <div class="bannerPrincipalIndex" data-aos="zoom-out-up">
+                <img class="imgPrincipalIndex1" src="./images/banner1Principal.jpg"
+                    alt="Banner de ranura sim card de celulares">
                 <img class="imgPrincipalIndex2" src="./images/banner2Principal.jpg" alt="Banner de celulares">
-                <img class="imgPrincipalIndex3" src="./images/banner3Principal.jpg" alt="Banner de covers para celulares">
+                <img class="imgPrincipalIndex3" src="./images/banner3Principal.jpg"
+                    alt="Banner de covers para celulares">
                 <p>Tu necesidad, tu estilo, tu celular... Y lo mejor es que tú lo construyes!!!</p>
                 <div class="btnMasInfoBlanco">
                     <a href="#">Saber más</a>
                 </div>
-            </div>        
+            </div>
         </section>
 
         <section>
-            <article class="galeriaIndex">
+            <article class="galeriaIndex" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="btnMasInfoNegro">
-                    <h3>Titulo de la section</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur, tenetur provident
-                        maxime magni at, amet corporis, omnis neque quis id labore similique architecto quod! Voluptates
-                        illo sunt corrupti facilis?</p>
+                    <h2>Galería de Productos</h2>
+                    <p>Descubre nuestra amplia variedad de dispositivos móviles y accesorios diseñados para adaptarse a tus necesidades. Garantizamos calidad, diseño y funcionalidad en cada uno de nuestros productos.</p>
                     <a href="">Más información</a>
-                </div>                
-                <img class="imgGale1Index" src="./images/imgGaleria1.jpg" alt="Covers de dispositivos mobiles">
-                <img class="imgGale2Index" src="./images/imgGaleria2.jpg" alt="Camaras de dispositivos mobiles">
-                <img class="imgGale3Index" src="./images/imgGaleria3.jpg" alt="Tamaños de dispositivos mobiles">                
+                </div>
+                <img class="imgGale1Index" src="./images/imgGaleria1.jpg" alt="Covers de dispositivos móviles">
+                <img class="imgGale2Index" src="./images/imgGaleria2.jpg" alt="Cámaras de dispositivos móviles">
+                <img class="imgGale3Index" src="./images/imgGaleria3.jpg" alt="Tamaños de dispositivos móviles">
             </article>
         </section>
-        <section>
-            <article  class="masInfoIndex">
+        <section data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <article class="masInfoIndex">
                 <div class="infoClaroIndex1">
                     <div class="btnMasInfoAzul">
                         <img src="./icons/iconCall.png" alt="Icono de llamada">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus totam
-                            voluptas a ad provident tenetur facilis.</p>
+                        <p>¿Tienes dudas? Comunícate con nuestro equipo de atención al cliente. Estamos disponibles para asistirte en lo que necesites.</p>
                         <a href="#">Más información</a>
                     </div>
                 </div>
                 <div class="infoOscuroIndex1">
                     <div class="btnMasInfoBlanco">
-                        <img src="./icons/iconAyuda.png" alt="Icono de llamada">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus totam
-                            voluptas a ad provident tenetur facilis.</p>
+                        <img src="./icons/iconAyuda.png" alt="Icono de ayuda">
+                        <p>Encuentra respuestas a tus preguntas frecuentes en nuestra sección de ayuda. Estamos aquí para apoyarte.</p>
                         <a href="#">Más información</a>
                     </div>
                 </div>
                 <div class="infoClaroIndex2">
                     <div class="btnMasInfoAzul">
-                        <img src="./icons/iconEnvios.png" alt="Icono de llamada">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus totam
-                            voluptas a ad provident tenetur facilis.</p>
+                        <img src="./icons/iconEnvios.png" alt="Icono de envíos">
+                        <p>Conoce nuestras opciones de envío rápido y seguro para que tus productos lleguen a tiempo, donde los necesites.</p>
                         <a href="#">Más información</a>
                     </div>
                 </div>
                 <div class="infoOscuroIndex2">
                     <div class="btnMasInfoBlanco">
-                        <img src="./icons/iconCobros.png" alt="Icono de llamada">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus totam
-                            voluptas a ad provident tenetur facilis.</p>
+                        <img src="./icons/iconCobros.png" alt="Icono de cobros">
+                        <p>Explora nuestras diversas formas de pago y elige la que mejor se adapte a tus necesidades.</p>
                         <a href="#">Más información</a>
                     </div>
                 </div>
             </article>
         </section>
+        
     </main>
 
     <footer id="footer">
@@ -156,13 +166,18 @@
         <section>
             <ul class="redesFooter">
                 <p>Mantente informado. ¡Síguenos!</p>
-                <li> <a href="https://www.facebook.com" target="_blank"><img src="./icons/iconFaceBook.png" alt="FaceBook"></a></li>
-                <li> <a href="https://www.instagram.com" target="_blank"><img src="./icons/iconInstagram.png" alt="Instagram"></a></li>
-                <li> <a href="https://twitter.com" target="_blank"><img src="./icons/iconTwitterX.png" alt="TwitterX"></a></li>
-                <li> <a href="https://www.youtube.com" target="_blank"><img src="./icons/iconYouTube.png" alt="YouTube"></a></li>
+                <li> <a href="https://www.facebook.com" target="_blank"><img src="./icons/iconFaceBook.png"
+                            alt="FaceBook"></a></li>
+                <li> <a href="https://www.instagram.com" target="_blank"><img src="./icons/iconInstagram.png"
+                            alt="Instagram"></a></li>
+                <li> <a href="https://twitter.com" target="_blank"><img src="./icons/iconTwitterX.png"
+                            alt="TwitterX"></a></li>
+                <li> <a href="https://www.youtube.com" target="_blank"><img src="./icons/iconYouTube.png"
+                            alt="YouTube"></a></li>
             </ul>
         </section>
     </footer>
+    
     <!-- Link de js BTS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -170,6 +185,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    
+        <!-- Link de AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
